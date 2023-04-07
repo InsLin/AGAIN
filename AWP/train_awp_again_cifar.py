@@ -15,7 +15,7 @@ from utils import Bar, Logger, AverageMeter, accuracy
 from utils_awp import MixAWP
 
 
-parser = argparse.ArgumentParser(description='PyTorch CIFAR AWP Adversarial Training')
+parser = argparse.ArgumentParser(description='PyTorch CIFAR AGAIN_AWP Adversarial Training')
 parser.add_argument('--arch', type=str, default='WideResNet34')
 parser.add_argument('--batch-size', type=int, default=128, metavar='N',
                     help='input batch size for training (default: 128)')
