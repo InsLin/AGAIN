@@ -7,3 +7,22 @@ The code has been implemented and tested with Python 3.7.15. To install the requ
 ```bash
 $ pip install -r requirements.txt
 ```
+
+## Usage
+### Training
+
+```
+$ python AWP/train_awp_again_cifar.py --arch <model_architecture> \
+	--batch-size <train_batch_size> \
+	--test-batch-size <test_batch_size> \
+	--epochs 200 \
+	--start_epoch 1 \
+	--data <name_of_the_dataset>
+	--data-path <path_to_dataset>
+	--lr 0.1 \
+	--epsilon 8 \
+	--num-steps 10 \
+	--step-size 2 \
+	--model-dir <model_dir> \
+	--save-freq <save_freq> \
+```

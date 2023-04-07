@@ -44,8 +44,6 @@ parser.add_argument('--num-steps', default=10, type=int,
                     help='perturb number of steps')
 parser.add_argument('--step-size', default=2, type=float,
                     help='perturb step size')
-parser.add_argument('--seed', type=int, default=1, metavar='S',
-                    help='random seed (default: 1)')
 parser.add_argument('--model-dir', default='./ckpt',
                     help='directory of model for saving checkpoint')
 parser.add_argument('--resume-model', default='', type=str,
@@ -74,7 +72,6 @@ model_dir = args.model_dir
 if not os.path.exists(model_dir):
     os.makedirs(model_dir)
 use_cuda = not args.no_cuda and torch.cuda.is_available()
-torch.manual_seed(args.seed)
 device = torch.device("cuda" if use_cuda else "cpu")
 kwargs = {'num_workers': 2, 'pin_memory': True} if use_cuda else {}
 
