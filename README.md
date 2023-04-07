@@ -4,4 +4,6 @@ The Offical Code of CVPR2023: AGAIN: Adversarial Training with Attribution Span 
 ## Requirements
 The code has been implemented and tested with Python 3.7.15. To install the required packages:
 
-'$ pip install -r requirements.txt'
+```bash
+$ pip install -r requirements.txt
+```
