@@ -9,9 +9,8 @@ import attack_generator as attack
 
 parser = argparse.ArgumentParser(description='PyTorch White-box Adversarial Attack Test')
 parser.add_argument('--data', type=str, default="cifar10", help="choose from cifar10,cifar100")
-parser.add_argument('--attack_method', type=str,default="dat", help = "choose form: dat and trades")
 parser.add_argument('--model_path', default='./ckpt', help='model for white-box attack evaluation')
-parser.add_argument('--method',type=str,default='dat',help='select attack setting following DAT or TRADES')
+
 
 args = parser.parse_args()
 
