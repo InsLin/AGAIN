@@ -30,6 +30,6 @@ $ python AGAIN_with_AWP/train_awp_again_cifar.py --arch <model_architecture> \
 ### Evaluation Commands
 
 ```
-$ python AGAIN_with_AWP/attack_test.py --data  <name_of_the_dataset>
+$ python AGAIN_with_AWP/attack_test.py --data  <name_of_the_dataset> \
 	--model_path <path_to_model>
 ```
